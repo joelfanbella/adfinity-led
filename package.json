@@ -1,0 +1,13 @@
+{
+  "name": "adfinity-led",
+  "version": "1.0.0",
+  "description": "Adfinity LED Sales & Solutions",
+  "main": "index.html",
+  "scripts": {
+    "dev": "npx http-server -p 3003",
+    "start": "npx http-server -p 3003"
+  },
+  "dependencies": {
+    "http-server": "^14.1.1"
+  }
+}

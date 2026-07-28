@@ -1,0 +1,129 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap");
+@import url("../bootstrap/css/bootstrap.css");
+@import url("../fonts/fonts.css");
+@import url("../stylesheets/slimmenu.css");
+@import url("../stylesheets/navmenu.css");
+@import url("../stylesheets/intro02.css");
+@import url("../stylesheets/main.css");
+@import url("../stylesheets/owl.carousel.css");
+@import url("../stylesheets/owl.carousel.theme.css");
+@import url("../stylesheets/parallax.css");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css");
+@import url("../stylesheets/main-bg.css");
+@import url("../stylesheets/main-responsive.css");
+@import url("../stylesheets/main-retina.css");
+@import url("revamped.css");
+
+/* ==========================================================================
+   Global Theme Overrides for Child Pages (Inspired by The LED Studio)
+   ========================================================================== */
+
+body, html {
+    background-color: #000000 !important;
+    color: #ffffff !important;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif !important;
+}
+
+/* Make default content wrappers dark-friendly */
+#main-content, 
+.section, 
+.container, 
+.row, 
+.col-md-12, 
+.col-sm-12, 
+.col-xs-12,
+.about-us, 
+.contact-section,
+.page-header {
+    background-color: transparent !important;
+    background-image: none !important;
+    color: #ffffff !important;
+}
+
+/* Typography elements */
+h1, h2, h3, h4, h5, h6, 
+.super-heading, 
+.super-heading span,
+.sub-heading {
+    color: #ffffff !important;
+    font-family: 'Inter', sans-serif !important;
+    font-weight: 700 !important;
+}
+
+.super-heading span {
+    background: none !important;
+}
+
+p, .text-muted, .credits, .tagline {
+    color: #94a3b8 !important;
+    font-family: 'Inter', sans-serif !important;
+}
+
+a {
+    color: #ffff00 !important;
+    transition: all 0.3s ease !important;
+}
+
+a:hover {
+    color: #ffcc00 !important;
+    text-decoration: none !important;
+}
+
+/* Header & Navigation */
+.masthead, header {
+    background: rgba(5, 8, 17, 0.85) !important;
+    backdrop-filter: blur(12px) !important;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08) !important;
+}
+
+/* Footer Section */
+.footer, footer {
+    background-color: #020306 !important;
+    background-image: none !important;
+    border-top: 1px solid rgba(255, 255, 255, 0.08) !important;
+    padding-top: 50px !important;
+}
+
+.footer-heading span {
+    color: #ffffff !important;
+    border-bottom: 2px solid #ffff00 !important;
+}
+
+.footer p, .footer li, .footer a {
+    color: #94a3b8 !important;
+}
+
+.footer a:hover {
+    color: #ffff00 !important;
+}
+
+/* Form controls */
+input, textarea, select, .form-control {
+    background-color: rgba(255, 255, 255, 0.03) !important;
+    border: 1px solid rgba(255, 255, 255, 0.08) !important;
+    color: #ffffff !important;
+    border-radius: 8px !important;
+    transition: all 0.3s ease !important;
+}
+
+input:focus, textarea:focus, .form-control:focus {
+    border-color: #ffff00 !important;
+    box-shadow: 0 0 15px rgba(255, 255, 0, 0.15) !important;
+    background-color: rgba(255, 255, 255, 0.05) !important;
+}
+
+.btn-warning, .btn-submit, button[type="submit"] {
+    background-color: #ffff00 !important;
+    border-color: #ffff00 !important;
+    color: #000000 !important;
+    font-weight: 600 !important;
+    transition: all 0.3s ease !important;
+    border-radius: 8px !important;
+}
+
+.btn-warning:hover, .btn-submit:hover, button[type="submit"]:hover {
+    background-color: #ffcc00 !important;
+    border-color: #ffcc00 !important;
+    box-shadow: 0 0 20px rgba(255, 255, 0, 0.4) !important;
+    transform: translateY(-2px) !important;
+}
