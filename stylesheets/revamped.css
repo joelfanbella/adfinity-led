@@ -253,7 +253,21 @@ a:hover {
     text-align: center;
     padding: 120px 20px 80px;
     position: relative;
-    background: radial-gradient(circle at center, rgba(240, 242, 245, 0.4) 0%, var(--bg-dark) 80%);
+    background: linear-gradient(rgba(18, 18, 18, 0.65), rgba(18, 18, 18, 0.85)), url('../images/bg/led_homepage_bg.jpg') no-repeat center center / cover;
+}
+
+.hero-revamped .hero-title {
+    color: #FFFFFF !important;
+}
+
+.hero-revamped .hero-title.text-gradient {
+    background: linear-gradient(135deg, #FFFFFF 30%, var(--color-secondary) 100%) !important;
+    -webkit-background-clip: text !important;
+    -webkit-text-fill-color: transparent !important;
+}
+
+.hero-revamped .hero-description {
+    color: #E2E8F0 !important;
 }
 
 .hero-revamped::before {
