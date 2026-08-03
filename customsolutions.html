@@ -24,10 +24,27 @@
 <link rel="shortcut icon" href="favicon.ico">
 
 <link href="stylesheets/master.css" rel="stylesheet">
-
 <link rel="stylesheet" href="css/style.css">
-
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        colors: {
+          primary: '#00A3E0',     // Cyan Blue
+          secondary: '#39B54A',   // Vibrant Green
+          charcoal: '#121212',    // Off-Black
+          slate: '#6E7175',       // Slate Gray
+          background: '#FFFFFF',  // Light background
+        },
+        fontFamily: {
+          sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+        }
+      }
+    }
+  }
+</script>
 
 <script src="less/less-1.7.3.min.js"></script>
 
@@ -85,160 +102,183 @@
 
 
 <!-- Master Wrap : starts -->
+<section class="mastwrap">
+  <!-- Hero Section -->
+  <div class="relative overflow-hidden pt-36 pb-24 bg-charcoal text-white" style="background: linear-gradient(rgba(18, 18, 18, 0.7), rgba(18, 18, 18, 0.85)), url('images/bg/Customsolutions.jpg') no-repeat center center / cover;">
+    <div class="px-8 max-w-7xl mx-auto">
+      <div class="mb-8 flex items-center space-x-2 font-mono text-xs text-slate-300">
+        <a href="index.html" class="hover:text-primary transition-colors text-slate-300 decoration-none">Home</a>
+        <span class="fa fa-chevron-right text-[10px] text-slate-400"></span>
+        <span class="text-primary font-semibold">Custom Solutions</span>
+      </div>
+      <div class="max-w-4xl">
+        <div class="inline-block border-l-2 border-primary pl-4 mb-6">
+          <span class="font-mono text-xs text-primary tracking-[0.25em] uppercase font-bold">Engineering Excellence</span>
+        </div>
+        <h1 class="text-4xl md:text-6xl font-extrabold tracking-tight mb-6" style="font-family: 'Plus Jakarta Sans', sans-serif;">
+          Custom <span class="text-primary">Solutions</span>
+        </h1>
+        <p class="text-lg text-slate-200 max-w-2xl font-light leading-relaxed" style="font-family: 'Plus Jakarta Sans', sans-serif;">
+          Merging architectural precision with high-performance LED technology to create immersive digital experiences tailored to your brand's unique identity.
+        </p>
+      </div>
+    </div>
+  </div>
 
+  <!-- Introduction Section -->
+  <div class="py-20 px-8 max-w-7xl mx-auto">
+    <div class="bg-white border border-slate-200/80 p-8 md:p-12 rounded-2xl shadow-[0_10px_35px_rgba(18,18,18,0.03)] relative overflow-hidden group">
+      <div class="grid md:grid-cols-2 gap-12 items-center">
+        <div class="text-left">
+          <h2 class="text-3xl font-extrabold text-charcoal mb-6" style="font-family: 'Plus Jakarta Sans', sans-serif;">Beyond Standard Displays</h2>
+          <div class="space-y-6 text-slate leading-relaxed text-base" style="font-family: 'Plus Jakarta Sans', sans-serif;">
+            <p>
+              At Adfinity LED, we specialize in high-impact <span class="text-charcoal font-semibold">Brand Activation</span> and high-profile <span class="text-charcoal font-semibold">Promotions</span>. Our custom solutions move beyond the rectangle, creating sculptural digital media that integrates seamlessly with your physical environment.
+            </p>
+            <p>
+              Given its proficiency and expertise in the roll out of digital indoor and outdoor signages and screen business across leading retail giants and shopping malls, Adfinity Global Solutions Pvt. Ltd now offers custom solutions that can help brands enhance their visual marketing strategy. We consult some of the upcoming shopping malls and leading retail brands in relation to their Digital Signage requirements by offering some of the most innovative solutions that include Intelligent Visual Displays, Internet enabled Billboards, Digital Menu Boards, Cloud-based Content Management Software (CMS) and much more.
+            </p>
+            <p>
+              Feel free to reach out to us and make full use of our domain expertise.
+            </p>
+          </div>
+        </div>
+        <div class="relative h-[340px] rounded-xl overflow-hidden border border-slate-200">
+          <img class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700" alt="Intelligent Visual Displays" src="images/bg/VisualDisplays.jpg"/>
+          <div class="absolute inset-0 bg-gradient-to-t from-charcoal/20 to-transparent"></div>
+        </div>
+      </div>
+    </div>
+  </div>
 
+  <!-- Process Timeline Section -->
+  <div class="py-24 bg-slate-50 border-y border-slate-200/60">
+    <div class="px-8 max-w-7xl mx-auto">
+      <div class="text-center mb-16">
+        <h2 class="text-3xl font-extrabold text-charcoal mb-4" style="font-family: 'Plus Jakarta Sans', sans-serif;">Our Engineering Process</h2>
+        <p class="text-base text-slate" style="font-family: 'Plus Jakarta Sans', sans-serif;">Four phases from conceptualization to final deployment.</p>
+      </div>
+      <div class="grid md:grid-cols-4 gap-6">
+        <!-- Step 1 -->
+        <div class="bg-white border border-slate-200/80 p-8 rounded-xl hover:-translate-y-1 hover:border-primary/40 hover:shadow-[0_12px_25px_rgba(0,163,224,0.06)] transition-all duration-300 text-left">
+          <div class="w-12 h-12 bg-primary/10 flex items-center justify-center rounded-lg mb-6 border border-primary/20 text-primary">
+            <i class="fa fa-line-chart text-lg"></i>
+          </div>
+          <div class="text-xs font-mono text-primary font-bold mb-2 uppercase">PHASE 01</div>
+          <h3 class="text-lg font-bold text-charcoal mb-3" style="font-family: 'Plus Jakarta Sans', sans-serif;">Consultation</h3>
+          <p class="text-slate text-sm leading-relaxed" style="font-family: 'Plus Jakarta Sans', sans-serif;">
+            Detailed venue analysis and target audience mapping to ensure optimal viewing angles and engagement metrics.
+          </p>
+        </div>
+        <!-- Step 2 -->
+        <div class="bg-white border border-slate-200/80 p-8 rounded-xl hover:-translate-y-1 hover:border-primary/40 hover:shadow-[0_12px_25px_rgba(0,163,224,0.06)] transition-all duration-300 text-left">
+          <div class="w-12 h-12 bg-primary/10 flex items-center justify-center rounded-lg mb-6 border border-primary/20 text-primary">
+            <i class="fa fa-pencil-square-o text-lg"></i>
+          </div>
+          <div class="text-xs font-mono text-primary font-bold mb-2 uppercase">PHASE 02</div>
+          <h3 class="text-lg font-bold text-charcoal mb-3" style="font-family: 'Plus Jakarta Sans', sans-serif;">Custom Design</h3>
+          <p class="text-slate text-sm leading-relaxed" style="font-family: 'Plus Jakarta Sans', sans-serif;">
+            Creation of precision CAD models and curve line analysis for unconventional structural integration and custom shapes.
+          </p>
+        </div>
+        <!-- Step 3 -->
+        <div class="bg-white border border-slate-200/80 p-8 rounded-xl hover:-translate-y-1 hover:border-primary/40 hover:shadow-[0_12px_25px_rgba(0,163,224,0.06)] transition-all duration-300 text-left">
+          <div class="w-12 h-12 bg-primary/10 flex items-center justify-center rounded-lg mb-6 border border-primary/20 text-primary">
+            <i class="fa fa-cogs text-lg"></i>
+          </div>
+          <div class="text-xs font-mono text-primary font-bold mb-2 uppercase">PHASE 03</div>
+          <h3 class="text-lg font-bold text-charcoal mb-3" style="font-family: 'Plus Jakarta Sans', sans-serif;">Engineering</h3>
+          <p class="text-slate text-sm leading-relaxed" style="font-family: 'Plus Jakarta Sans', sans-serif;">
+            Modular LED construction utilizing high-grade substrates and custom cooling solutions for long-term reliability.
+          </p>
+        </div>
+        <!-- Step 4 -->
+        <div class="bg-white border border-slate-200/80 p-8 rounded-xl hover:-translate-y-1 hover:border-primary/40 hover:shadow-[0_12px_25px_rgba(0,163,224,0.06)] transition-all duration-300 text-left">
+          <div class="w-12 h-12 bg-primary/10 flex items-center justify-center rounded-lg mb-6 border border-primary/20 text-primary">
+            <i class="fa fa-cloud-upload text-lg"></i>
+          </div>
+          <div class="text-xs font-mono text-primary font-bold mb-2 uppercase">PHASE 04</div>
+          <h3 class="text-lg font-bold text-charcoal mb-3" style="font-family: 'Plus Jakarta Sans', sans-serif;">Deployment</h3>
+          <p class="text-slate text-sm leading-relaxed" style="font-family: 'Plus Jakarta Sans', sans-serif;">
+            Professional installation and integration with our proprietary Cloud CMS for seamless remote management.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
 
-<section class="mastwrap page-top-space">
+  <!-- Innovative Solutions Section -->
+  <div class="py-24 px-8 max-w-7xl mx-auto">
+    <div class="flex flex-col md:flex-row justify-between items-end mb-16 gap-4 border-b border-slate-200 pb-6 text-left">
+      <div>
+        <span class="text-xs font-mono text-primary font-bold uppercase tracking-widest mb-2 block">Case Study Modules</span>
+        <h2 class="text-3xl font-extrabold text-charcoal" style="font-family: 'Plus Jakarta Sans', sans-serif;">Innovative Solutions</h2>
+      </div>
+    </div>
+    <div class="grid md:grid-cols-2 gap-8">
+      <!-- Card 1 -->
+      <div class="bg-white border border-slate-200/80 rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition-all duration-300 flex flex-col h-full group text-left">
+        <div class="relative h-64 overflow-hidden">
+          <img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" alt="Adfinity Intelligent Visual Displays" src="images/signage.jpg"/>
+          <div class="absolute top-4 left-4">
+            <div class="bg-charcoal/80 backdrop-blur-sm px-3 py-1 rounded border border-primary/30">
+              <span class="text-[10px] font-mono text-primary font-bold">CLOUD SYSTEM V2.0</span>
+            </div>
+          </div>
+        </div>
+        <div class="p-8 flex flex-col flex-grow">
+          <h3 class="text-2xl font-bold text-charcoal mb-4" style="font-family: 'Plus Jakarta Sans', sans-serif;">Intelligent Visual Displays &amp; Signages</h3>
+          <p class="text-slate mb-8 flex-grow text-sm leading-relaxed" style="font-family: 'Plus Jakarta Sans', sans-serif;">
+            Our proprietary Cloud CMS allows for worldwide content orchestration. Manage brightness levels, scheduling, and health diagnostics from a single encrypted dashboard.
+          </p>
+          <a href="visualdisplay.html" class="w-fit flex items-center space-x-2 text-primary hover:text-primary/80 font-bold font-mono text-xs group/btn text-decoration-none">
+            <span>READ MORE</span>
+            <span class="fa fa-arrow-right transition-transform group-hover/btn:translate-x-1"></span>
+          </a>
+        </div>
+      </div>
+      <!-- Card 2 -->
+      <div class="bg-white border border-slate-200/80 rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition-all duration-300 flex flex-col h-full group text-left">
+        <div class="relative h-64 overflow-hidden">
+          <img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" alt="Industry Specific Solutions" src="images/hospitality.jpg"/>
+          <div class="absolute top-4 left-4">
+            <div class="bg-charcoal/80 backdrop-blur-sm px-3 py-1 rounded border border-primary/30">
+              <span class="text-[10px] font-mono text-primary font-bold">FINTECH SECTOR</span>
+            </div>
+          </div>
+        </div>
+        <div class="p-8 flex flex-col flex-grow">
+          <h3 class="text-2xl font-bold text-charcoal mb-4" style="font-family: 'Plus Jakarta Sans', sans-serif;">Industry Specific Solutions</h3>
+          <p class="text-slate mb-8 flex-grow text-sm leading-relaxed" style="font-family: 'Plus Jakarta Sans', sans-serif;">
+            Tailored display frameworks for Financial Institutions, creating secure, high-uptime data visualization environments that transform lobby spaces into information hubs.
+          </p>
+          <a href="industrysolutions.html" class="w-fit flex items-center space-x-2 text-primary hover:text-primary/80 font-bold font-mono text-xs group/btn text-decoration-none">
+            <span>READ MORE</span>
+            <span class="fa fa-arrow-right transition-transform group-hover/btn:translate-x-1"></span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
 
-
-<div class="container-fluid">
-	<div class="row">
-	
-
-<div class="firstStyle"></div>
-
-		<article class="col-md-12 text-center custom-bg page-bg ">
-		<img src="images/bg/Customsolutions.jpg"/>
-			<div class="pbg">
-			<h1 class="main-heading font2"><span>Custom Solutions</span></h1>
-			<div class="clearfix"></div>
-			<p class="white"><a href="index.html">Home </a>/ Custom Solutions</p>
-			<div class="clearfix"></div>
-			</div>
-			
-		</article>
-
-
-	</div>
-</div>
-
-<div class="container">
-
-
-	<div class="row add-top">
-		
-	
-		
-	</div>
-
-
-	<div class="row add-bottom">
-<p>Brand Activation, Promotion and Direct Marketing are intrinsic to brand communication as brands continue to focus on experiential marketing to push sales. A growing number of service related industries such as hospitality, healthcare, financial institutions as well as multiplexes, malls and retail chains present wide opportunities for brands to market themselves to a receptive and captive audience.</p>
-
-<p>Today, Digital Indoor media has evolved to offer multiple benefits to advertisers as they have been effective in enthralling and engaging the audience while creating personalized user interface and an enhanced shopping experience.</p>
-
-<p>Given its proficiency and expertise in the roll out of digital indoor and outdoor signages and screen business across leading retail giants and shopping malls, Adfinity Global Solutions Pvt. Ltd now offers custom solutions that can help brands enhance their visual marketing strategy.  We consult some of the upcoming shopping malls and leading retail brands in relation to their Digital Signage requirements by offering some of the most innovative solutions that include Intelligent Visual Displays, Internet enabled Billboards, Digital Menu Boards, Cloud-based Content Management Software (CMS) and much more.</p>
-
-<p>Feel free to reach out to us and make full use of our domain expertise. </p>
-	<hr>
-	<div class="col-sm-6 col-md-6 ">
-	
-			
-			<div class="mim"><img src="images/signage.jpg" alt="ADFINITY Intelligent Visual Displays & Digital Signages"></div>
-			<div class="bor1">
-			<h3>Adfinity Intelligent Visual Displays & Digital Signages</h3>
-			<h4>Advertisement Exchange</h4>
-<p>Adfinity Global has established a powerful cloud platform to manage the advertisers’ content online. Manage content of your digital screens online through our cloud based CMS and redefine digital displays at your shops or offices to create greater impact. </p>
-
-	<a href="visualdisplay.html" class="hvr-sweep-to-right">Readmore</a>	
-	</div>
-		
-		</div>	
-		<div class="col-sm-6 col-md-6 ">
-	
-			
-			<div class="mim"><img src="images/hospitality.jpg" alt="ADFINITY Intelligent Visual Displays & Digital Signages"></div>
-			<div class="bor1">
-			<h3>Industry Specific Solutions </h3>
-			<h4>Financial Institutions</h4>
-<p>Banking and Insurance companies typically have a captive audience interacting within a controlled environment, making them more receptive to wide range of products and service offers.</p>
-
-	<a href="industrysolutions.html" class="hvr-sweep-to-right">Readmore</a>	
-	</div>
-		
-		</div>
-	<div class="clearfix"></div>
-	
-	</div>
-</div>
-
-
-
-<!--
-
-<section class="about-stats color-bg">
-	
-<div class="container">
-	<div class="row">
-		
-		<article class="col-md-12 text-center">
-			<div class="owl-carousel">
-		    <div class="item">
-		    	<div class="feature-item">
-		    		<img alt="" title="" class="img-responsive" src="images/features/01.png"/>
-					<h3 class="white font2">Precise</h3>
-				</div>
-		    </div>
-
-
-		    <div class="item">
-		    	<div class="feature-item">
-		    		<img alt="" title="" class="img-responsive" src="images/features/02.png"/>
-					<h3 class="white font2">Reputed</h3>
-				</div>
-		    </div>
-
-
-		    <div class="item">
-		    	<div class="feature-item">
-		    		<img alt="" title="" class="img-responsive" src="images/features/03.png"/>
-					<h3 class="white font2">Reliable</h3>
-				</div>
-		    </div>
-
-
-		    <div class="item">
-		    	<div class="feature-item">
-		    		<img alt="" title="" class="img-responsive" src="images/features/04.png"/>
-					<h3 class="white font2">Creative</h3>
-				</div>
-		    </div>
-
-
-		    <div class="item">
-		    	<div class="feature-item">
-		    		<img alt="" title="" class="img-responsive" src="images/features/05.png"/>
-					<h3 class="white font2">On-time</h3>
-				</div>
-		    </div>
-
-
-		    <div class="item">
-		    	<div class="feature-item">
-		    		<img alt="" title="" class="img-responsive" src="images/features/06.png"/>
-					<h3 class="white font2">Support</h3>
-				</div>
-		    </div>
-
-		   </div>
-		</article>
-
-
-	</div>
-</div>
-
-
+  <!-- Technical Specs CTA -->
+  <div class="py-20 px-8 max-w-7xl mx-auto">
+    <div class="bg-charcoal text-white p-12 md:p-16 rounded-2xl border border-slate-800 text-center relative overflow-hidden">
+      <h2 class="text-3xl font-extrabold mb-6" style="font-family: 'Plus Jakarta Sans', sans-serif;">Ready for a Custom Build?</h2>
+      <p class="text-slate-300 text-base max-w-2xl mx-auto mb-10" style="font-family: 'Plus Jakarta Sans', sans-serif;">
+        Consult with our engineering team to develop a bespoke LED solution that meets your project's specific technical and aesthetic requirements.
+      </p>
+      <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+        <a href="#subscribeform" class="bg-primary text-white px-8 py-3.5 font-bold text-sm tracking-wider uppercase rounded hover:bg-primary/90 transition-all text-decoration-none">
+          Request Spec Sheet
+        </a>
+        <a href="#subscribeform" class="border border-slate-700 text-white px-8 py-3.5 font-bold text-sm tracking-wider uppercase rounded hover:bg-white/5 transition-all text-decoration-none">
+          Contact Engineering
+        </a>
+      </div>
+    </div>
+  </div>
 </section>
-
--->
-
-
-
-
-
-
-
-</section> 
 <!-- Master Wrap : ends -->
 
   
