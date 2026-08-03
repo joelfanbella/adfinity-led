@@ -19,12 +19,12 @@
    ========================================================================== */
 
 body, html {
-    background-color: #000000 !important;
-    color: #ffffff !important;
+    background-color: #FFFFFF !important;
+    color: #121212 !important;
     font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif !important;
 }
 
-/* Make default content wrappers dark-friendly */
+/* Make default content wrappers light-friendly */
 #main-content, 
 .section, 
 .container, 
@@ -37,7 +37,7 @@ body, html {
 .page-header {
     background-color: transparent !important;
     background-image: none !important;
-    color: #ffffff !important;
+    color: #121212 !important;
 }
 
 /* Typography elements */
@@ -45,7 +45,7 @@ h1, h2, h3, h4, h5, h6,
 .super-heading, 
 .super-heading span,
 .sub-heading {
-    color: #ffffff !important;
+    color: #121212 !important;
     font-family: 'Inter', sans-serif !important;
     font-weight: 700 !important;
 }
@@ -55,75 +55,89 @@ h1, h2, h3, h4, h5, h6,
 }
 
 p, .text-muted, .credits, .tagline {
-    color: #94a3b8 !important;
+    color: #6E7175 !important;
     font-family: 'Inter', sans-serif !important;
 }
 
 a {
-    color: #ffff00 !important;
+    color: #00A3E0 !important;
     transition: all 0.3s ease !important;
 }
 
 a:hover {
-    color: #ffcc00 !important;
+    color: #39B54A !important;
     text-decoration: none !important;
 }
 
 /* Header & Navigation */
 .masthead, header {
-    background: rgba(5, 8, 17, 0.85) !important;
+    background: #121212 !important;
     backdrop-filter: blur(12px) !important;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.08) !important;
+    border-bottom: 1px solid rgba(110, 113, 117, 0.2) !important;
+}
+
+/* Mobile trigger & slideout sub-menu */
+.open span {
+    background: #FFFFFF !important;
+}
+.sub-menu {
+    background: #121212 !important;
+}
+.sub-menu li a {
+    color: #FFFFFF !important;
+}
+.sub-menu li a:hover {
+    color: #00A3E0 !important;
 }
 
 /* Footer Section */
 .footer, footer {
-    background-color: #020306 !important;
+    background-color: #121212 !important;
     background-image: none !important;
-    border-top: 1px solid rgba(255, 255, 255, 0.08) !important;
+    border-top: 1px solid rgba(110, 113, 117, 0.2) !important;
     padding-top: 50px !important;
 }
 
 .footer-heading span {
-    color: #ffffff !important;
-    border-bottom: 2px solid #ffff00 !important;
+    color: #FFFFFF !important;
+    border-bottom: 2px solid #00A3E0 !important;
 }
 
 .footer p, .footer li, .footer a {
-    color: #94a3b8 !important;
+    color: #6E7175 !important;
 }
 
 .footer a:hover {
-    color: #ffff00 !important;
+    color: #00A3E0 !important;
 }
 
 /* Form controls */
 input, textarea, select, .form-control {
-    background-color: rgba(255, 255, 255, 0.03) !important;
-    border: 1px solid rgba(255, 255, 255, 0.08) !important;
-    color: #ffffff !important;
+    background-color: rgba(18, 18, 18, 0.02) !important;
+    border: 1px solid rgba(110, 113, 117, 0.2) !important;
+    color: #121212 !important;
     border-radius: 8px !important;
     transition: all 0.3s ease !important;
 }
 
 input:focus, textarea:focus, .form-control:focus {
-    border-color: #ffff00 !important;
-    box-shadow: 0 0 15px rgba(255, 255, 0, 0.15) !important;
-    background-color: rgba(255, 255, 255, 0.05) !important;
+    border-color: #00A3E0 !important;
+    box-shadow: 0 0 15px rgba(0, 163, 224, 0.15) !important;
+    background-color: #FFFFFF !important;
 }
 
 .btn-warning, .btn-submit, button[type="submit"] {
-    background-color: #ffff00 !important;
-    border-color: #ffff00 !important;
-    color: #000000 !important;
+    background-color: #00A3E0 !important;
+    border-color: #00A3E0 !important;
+    color: #FFFFFF !important;
     font-weight: 600 !important;
     transition: all 0.3s ease !important;
     border-radius: 8px !important;
 }
 
 .btn-warning:hover, .btn-submit:hover, button[type="submit"]:hover {
-    background-color: #ffcc00 !important;
-    border-color: #ffcc00 !important;
-    box-shadow: 0 0 20px rgba(255, 255, 0, 0.4) !important;
+    background-color: #39B54A !important;
+    border-color: #39B54A !important;
+    box-shadow: 0 0 20px rgba(0, 163, 224, 0.4) !important;
     transform: translateY(-2px) !important;
 }

@@ -7,15 +7,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
 
 :root {
-    --bg-dark: #000000;
-    --bg-card: #111111;
-    --bg-card-hover: #1a1a1a;
-    --color-primary: #ffffff;
-    --color-secondary: #ffff00;
-    --color-accent: #ffcc00;
-    --color-muted: #b3b3b3;
-    --border-color: rgba(255, 255, 255, 0.08);
-    --border-glow: rgba(255, 255, 0, 0.3);
+    --bg-dark: #FFFFFF;
+    --bg-card: #F8F9FA;
+    --bg-card-hover: #E9ECEF;
+    --color-primary: #121212;
+    --color-secondary: #00A3E0;
+    --color-accent: #39B54A;
+    --color-muted: #6E7175;
+    --border-color: rgba(110, 113, 117, 0.15);
+    --border-glow: rgba(0, 163, 224, 0.3);
     --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
     --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -58,7 +58,7 @@ a:hover {
 }
 
 .text-gradient {
-    background: linear-gradient(135deg, #ffffff 30%, var(--color-secondary) 100%);
+    background: linear-gradient(135deg, var(--color-primary) 30%, var(--color-secondary) 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -75,8 +75,7 @@ a:hover {
     width: 100%;
     z-index: 1000;
     padding: 15px 40px;
-    background: rgba(5, 8, 17, 0.75);
-    backdrop-filter: blur(12px);
+    background: #121212;
     border-bottom: 1px solid var(--border-color);
     display: flex;
     justify-content: space-between;
@@ -86,7 +85,7 @@ a:hover {
 
 .masthead.scrolled {
     padding: 10px 40px;
-    background: rgba(5, 8, 17, 0.9);
+    background: rgba(18, 18, 18, 0.95);
 }
 
 .main-logo {
@@ -109,7 +108,7 @@ a:hover {
     display: block;
     width: 25px;
     height: 2px;
-    background-color: var(--color-primary);
+    background-color: #FFFFFF;
     transition: var(--transition-smooth);
 }
 
@@ -134,7 +133,7 @@ a:hover {
     right: -100%;
     width: 100%;
     height: 100vh;
-    background: rgba(5, 8, 17, 0.98);
+    background: rgba(18, 18, 18, 0.98);
     backdrop-filter: blur(20px);
     z-index: 999;
     display: flex;
@@ -179,7 +178,7 @@ a:hover {
 .navigation-menu ul li a {
     font-size: 2.2rem;
     font-weight: 800;
-    color: var(--color-primary);
+    color: #FFFFFF;
     letter-spacing: -0.5px;
     display: inline-block;
     position: relative;
@@ -221,26 +220,26 @@ a:hover {
 
 .btn-primary {
     background-color: var(--color-secondary);
-    color: var(--bg-dark);
+    color: #FFFFFF;
 }
 
 .btn-primary:hover {
     background-color: var(--color-accent);
-    color: var(--bg-dark);
-    box-shadow: 0 0 25px rgba(255, 255, 0, 0.4);
+    color: #FFFFFF;
+    box-shadow: 0 0 25px rgba(0, 163, 224, 0.4);
     transform: translateY(-2px);
 }
 
 .btn-outline {
     background-color: transparent;
     color: var(--color-primary);
-    border: 2px solid var(--border-color);
+    border: 2px solid var(--color-primary);
 }
 
 .btn-outline:hover {
     border-color: var(--color-secondary);
     color: var(--color-secondary);
-    box-shadow: 0 0 20px rgba(255, 255, 0, 0.15);
+    box-shadow: 0 0 20px rgba(0, 163, 224, 0.15);
     transform: translateY(-2px);
 }
 
@@ -254,7 +253,7 @@ a:hover {
     text-align: center;
     padding: 120px 20px 80px;
     position: relative;
-    background: radial-gradient(circle at center, rgba(20, 20, 20, 0.4) 0%, var(--bg-dark) 80%);
+    background: radial-gradient(circle at center, rgba(240, 242, 245, 0.4) 0%, var(--bg-dark) 80%);
 }
 
 .hero-revamped::before {
@@ -264,7 +263,7 @@ a:hover {
     left: 15%;
     width: 250px;
     height: 250px;
-    background: radial-gradient(circle, rgba(255, 255, 0, 0.12) 0%, transparent 70%);
+    background: radial-gradient(circle, rgba(0, 163, 224, 0.08) 0%, transparent 70%);
     z-index: 0;
     pointer-events: none;
 }
@@ -276,7 +275,7 @@ a:hover {
     right: 15%;
     width: 300px;
     height: 300px;
-    background: radial-gradient(circle, rgba(255, 204, 0, 0.08) 0%, transparent 70%);
+    background: radial-gradient(circle, rgba(57, 181, 74, 0.05) 0%, transparent 70%);
     z-index: 0;
     pointer-events: none;
 }
@@ -380,7 +379,7 @@ a:hover {
     left: 0;
     width: 100%;
     height: 100%;
-    background: radial-gradient(circle at 10% 10%, rgba(255, 255, 0, 0.03), transparent 60%);
+    background: radial-gradient(circle at 10% 10%, rgba(0, 163, 224, 0.03), transparent 60%);
     pointer-events: none;
     transition: var(--transition-smooth);
 }
@@ -389,11 +388,11 @@ a:hover {
     background: var(--bg-card-hover);
     border-color: var(--border-glow);
     transform: translateY(-8px);
-    box-shadow: 0 15px 40px -15px rgba(255, 255, 0, 0.15);
+    box-shadow: 0 15px 40px -15px rgba(0, 163, 224, 0.15);
 }
 
 .card-modern:hover::before {
-    background: radial-gradient(circle at 10% 10%, rgba(255, 255, 0, 0.08), transparent 60%);
+    background: radial-gradient(circle at 10% 10%, rgba(0, 163, 224, 0.08), transparent 60%);
 }
 
 .card-icon {
@@ -416,7 +415,7 @@ a:hover {
 
 /* Process Section (Define, Engineer, Deliver) */
 .process-section {
-    background: linear-gradient(180deg, var(--bg-dark) 0%, rgba(20, 20, 20, 0.1) 100%);
+    background: linear-gradient(180deg, var(--bg-dark) 0%, rgba(110, 113, 117, 0.05) 100%);
 }
 
 .process-grid {
@@ -436,7 +435,7 @@ a:hover {
     font-weight: 800;
     line-height: 1;
     margin-bottom: 20px;
-    background: linear-gradient(180deg, rgba(255, 255, 255, 0.15) 0%, rgba(255, 255, 255, 0.01) 100%);
+    background: linear-gradient(180deg, rgba(18, 18, 18, 0.15) 0%, rgba(18, 18, 18, 0.01) 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     transition: var(--transition-smooth);
@@ -462,7 +461,7 @@ a:hover {
 }
 
 .market-item {
-    background: rgba(255, 255, 255, 0.02);
+    background: rgba(18, 18, 18, 0.02);
     border: 1px solid var(--border-color);
     border-radius: 12px;
     padding: 25px 20px;
@@ -472,9 +471,9 @@ a:hover {
 }
 
 .market-item:hover {
-    background: rgba(255, 255, 0, 0.05);
+    background: rgba(0, 163, 224, 0.05);
     border-color: var(--color-secondary);
-    box-shadow: 0 8px 25px -10px rgba(255, 255, 0, 0.2);
+    box-shadow: 0 8px 25px -10px rgba(0, 163, 224, 0.2);
     transform: scale(1.03);
 }
 
@@ -485,7 +484,7 @@ a:hover {
 
 /* Stats Counter Grid */
 .stats-section {
-    background: rgba(20, 20, 20, 0.3);
+    background: rgba(110, 113, 117, 0.05);
 }
 
 .stats-grid {
@@ -518,7 +517,7 @@ a:hover {
 
 /* Clean CTA / Footer Section */
 .cta-footer {
-    background: linear-gradient(0deg, #020306 0%, var(--bg-dark) 100%);
+    background: linear-gradient(0deg, #E9ECEF 0%, var(--bg-dark) 100%);
     padding: 100px 0 50px;
     text-align: center;
 }
@@ -542,7 +541,7 @@ a:hover {
     border-radius: 16px;
     padding: 40px;
     margin-top: 30px;
-    box-shadow: 0 15px 30px -10px rgba(0,0,0,0.5);
+    box-shadow: 0 15px 30px -10px rgba(18,18,18,0.1);
 }
 
 .form-group {
@@ -554,7 +553,7 @@ a:hover {
 .form-input {
     flex: 1;
     padding: 16px 20px;
-    background: rgba(255, 255, 255, 0.03);
+    background: rgba(18, 18, 18, 0.02);
     border: 1px solid var(--border-color);
     border-radius: 8px;
     color: var(--color-primary);
@@ -565,8 +564,8 @@ a:hover {
 .form-input:focus {
     outline: none;
     border-color: var(--color-secondary);
-    background: rgba(255, 255, 255, 0.05);
-    box-shadow: 0 0 15px rgba(255, 255, 0, 0.1);
+    background: #FFFFFF;
+    box-shadow: 0 0 15px rgba(0, 163, 224, 0.15);
 }
 
 .form-textarea {
