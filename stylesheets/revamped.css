@@ -980,6 +980,10 @@ a:hover {
     background: linear-gradient(rgba(12, 16, 26, 0.45), rgba(12, 16, 26, 0.75)), url('../images/bg/custom_solutions_banner.png') no-repeat center center / cover !important;
 }
 
+.page-banner-visual {
+    background: linear-gradient(rgba(12, 16, 26, 0.45), rgba(12, 16, 26, 0.75)), url('../images/bg/visual_display_banner.png') no-repeat center center / cover !important;
+}
+
 .industry-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -1097,4 +1101,28 @@ a:hover {
     top: 2px !important;
     color: var(--color-accent) !important;
     font-size: 0.95rem !important;
+}
+
+/* ==========================================================================
+   Visual Display specific styles
+   ========================================================================== */
+.visual-grid {
+    display: grid !important;
+    grid-template-columns: repeat(3, 1fr) !important;
+    gap: 30px !important;
+    margin-top: 40px !important;
+    margin-bottom: 50px !important;
+}
+
+@media (max-width: 992px) {
+    .visual-grid {
+        grid-template-columns: repeat(2, 1fr) !important;
+    }
+}
+
+@media (max-width: 768px) {
+    .visual-grid {
+        grid-template-columns: 1fr !important;
+        gap: 25px !important;
+    }
 }
