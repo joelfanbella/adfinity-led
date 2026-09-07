@@ -12,6 +12,7 @@
     --bg-card-hover: #E9ECEF;
     --color-primary: #121212;
     --color-secondary: #00A3E0;
+    --color-secondary-hover: #007AB8;
     --color-accent: #39B54A;
     --color-muted: #6E7175;
     --border-color: rgba(110, 113, 117, 0.15);
@@ -224,7 +225,7 @@ a:hover {
 }
 
 .btn-primary:hover {
-    background-color: var(--color-accent);
+    background-color: var(--color-secondary-hover);
     color: #FFFFFF;
     box-shadow: 0 0 25px rgba(0, 163, 224, 0.4);
     transform: translateY(-2px);
@@ -232,14 +233,32 @@ a:hover {
 
 .btn-outline {
     background-color: transparent;
-    color: var(--color-primary);
-    border: 2px solid var(--color-primary);
+    color: var(--color-secondary);
+    border: 2px solid var(--color-secondary);
 }
 
 .btn-outline:hover {
-    border-color: var(--color-secondary);
-    color: var(--color-secondary);
-    box-shadow: 0 0 20px rgba(0, 163, 224, 0.15);
+    background-color: var(--color-secondary-hover);
+    border-color: var(--color-secondary-hover);
+    color: #FFFFFF;
+    box-shadow: 0 0 20px rgba(0, 163, 224, 0.35);
+    transform: translateY(-2px);
+}
+
+/* Outlined card CTAs: visible border, solid fill on hover */
+.card-modern a.btn-outline {
+    position: relative;
+    z-index: 1;
+    background-color: transparent !important;
+    color: var(--color-secondary) !important;
+    border: 2px solid var(--color-secondary) !important;
+}
+
+.card-modern a.btn-outline:hover {
+    background-color: var(--color-secondary-hover) !important;
+    border-color: var(--color-secondary-hover) !important;
+    color: #FFFFFF !important;
+    box-shadow: 0 0 25px rgba(0, 163, 224, 0.4);
     transform: translateY(-2px);
 }
 
@@ -916,8 +935,8 @@ a:hover {
 }
 
 .connect-demo-btn:hover {
-    background-color: var(--color-accent);
-    box-shadow: 0 4px 15px rgba(57, 181, 74, 0.25);
+    background-color: var(--color-secondary-hover);
+    box-shadow: 0 4px 15px rgba(0, 163, 224, 0.35);
     transform: translateY(-2px);
     color: #ffffff;
 }

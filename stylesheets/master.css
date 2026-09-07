@@ -69,6 +69,27 @@ a:hover {
     text-decoration: none !important;
 }
 
+a.btn-primary,
+a.btn-primary:hover {
+    color: #FFFFFF !important;
+}
+
+a.btn-primary:hover {
+    background-color: #007AB8 !important;
+}
+
+a.btn-outline {
+    color: #00A3E0 !important;
+    background-color: transparent !important;
+    border: 2px solid #00A3E0 !important;
+}
+
+a.btn-outline:hover {
+    color: #FFFFFF !important;
+    background-color: #007AB8 !important;
+    border-color: #007AB8 !important;
+}
+
 /* Header & Navigation */
 .masthead, header {
     background: #121212 !important;
@@ -136,8 +157,8 @@ input:focus, textarea:focus, .form-control:focus {
 }
 
 .btn-warning:hover, .btn-submit:hover, button[type="submit"]:hover {
-    background-color: #39B54A !important;
-    border-color: #39B54A !important;
+    background-color: #007AB8 !important;
+    border-color: #007AB8 !important;
     box-shadow: 0 0 20px rgba(0, 163, 224, 0.4) !important;
     transform: translateY(-2px) !important;
 }
